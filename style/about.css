@@ -1,0 +1,89 @@
+.about {
+    background: var(--second-bg-color);
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.about__img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+
+.about__img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    border-top: 3px solid var(--second-bg-color);
+    border-bottom: 3px solid var(--second-bg-color);
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
+}
+
+.about__content {
+    text-align: center;
+}
+
+.about__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@media (max-width: 940px) {
+
+    .about__subtitle {
+        font-size: 24px;
+    }
+
+    .about__text {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .about__img {
+        width: 200px;
+        height: 200px;
+    }
+
+}

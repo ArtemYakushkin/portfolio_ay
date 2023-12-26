@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --modal-bg-color: #081b29f4;
+    --gradient-bg-color: linear-gradient(180deg, rgba(17, 46, 66, 0.8743872549019608) 54%, rgba(255, 255, 255, 0.9136029411764706) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    min-height: 100vh;
+    padding: 72px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+.section-title span {
+    color: var(--main-color);
+}
+
+@media (max-width: 940px) {
+
+    .section-title {
+        font-size: 44px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .section-title {
+        font-size: 36px;
+    }
+
+}

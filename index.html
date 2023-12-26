@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#" class="logo">ArtemY.</a>
+          <nav className="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link active" href="#home">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#about">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#education">Education</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#skills">Skills</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#projects">Projects</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger mobile__btn-open">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------- Mobile Menu -------- -->
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__top">
+              <a href="#" class="logo">ArtemY.</a>
+              <div class="burger mobile__btn-close">
+                <div class="burger-line-open"></div>
+                <div class="burger-line-open"></div>
+                <div class="burger-line-open"></div>
+              </div>
+            </div>
+            <div class="mobile-menu__bottom">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#home">
+                      <i class="bx bx-home-alt"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#about">
+                      <i class="bx bx-smile"></i>
+                      About
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#education">
+                      <i class="bx bx-credit-card-front"></i>
+                      Education
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#skills">
+                      <i class="bx bx-stats"></i>
+                      Skills
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#projects">
+                      <i class="bx bx-paint-roll"></i>
+                      Projects
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#contacts">
+                      <i class="bx bxs-chat"></i>
+                      Contacts
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------- -->
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="container">
+          <div class="home__wrapper">
+            <div class="home__left">
+              <div class="home__content">
+                <h1 class="home__title">
+                  Hi, I'm <span>Artem Yakushkin</span>
+                </h1>
+                <div class="home__text-animate">
+                  <h3 class="home__subtitle">Frontend Developer</h3>
+                </div>
+                <p class="home__text">
+                  Welcome to this website! There's nothing here except coding, a
+                  few projects, and some dull technical details. If you were
+                  looking for a place to spend your precious time, you've come
+                  to the right address! Here, you'll find pages, buttons, and
+                  even a bit of color. Besides that, you'll see my photo, but
+                  alas, don't expect model standards - it's just a developer's
+                  photo. So, if you have some spare time and you're looking for
+                  a way to spend it, feel free to browse my projects and read
+                  articles. But be careful, it might be contagious!
+                </p>
+                <div class="home__btn-box">
+                  <a class="home__btn" href="#">
+                    <i class="bx bxs-contact"></i>
+                    Contact Me
+                  </a>
+                  <button class="home__btn">
+                    <i class="bx bx-download"></i>
+                    My Resume
+                  </button>
+                </div>
+              </div>
+              <div class="home__sci">
+                <a
+                  class="home__sci-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  class="home__sci-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a
+                  class="home__sci-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="home__right">
+              <img class="home__img" src="./image/Model bw.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <h2 class="section-title about__title">That's <span>Me</span></h2>
+            <div class="about__img">
+              <img src="./image/Model-small.jpg" alt="about me" />
+              <span class="circle-spin"></span>
+            </div>
+            <div class="about__content">
+              <h3 class="about__subtitle">Frontend Developer!</h3>
+              <p class="about__text">
+                What do we have here? Yes, it's me - Artem Yakushkin, your best
+                friend and the one who made this website. Well, it's time to
+                discover a bit about the genius thing next to this page. First,
+                about me: I'm a great developer (at least in my dreams) with a
+                massive ego and a light sense of humor. My life consists of
+                late-night coding including sometimes attempts to find that
+                pesky bug in the code, hiding like a devil under the table.
+                After endless hours working on projects, I spend my time to
+                understand what 'life beyond code' means. But forget about it,
+                who needs that anyway? I have a world of binary code and the
+                sizzling horizons of the command line. So, if you are absorbed
+                with those endless lines of code as I am and want to share your
+                adventures in the world of technical skills, welcome to my dull
+                world. Maybe we can exchange some small stories about how
+                computers make our lives interesting. Right?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/mobileMenu.js"></script>
+  </body>
+</html>
