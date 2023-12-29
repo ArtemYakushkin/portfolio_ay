@@ -13,6 +13,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: var(--second-bg-color);
 }
 
 *,
@@ -75,6 +76,7 @@ section {
 }
 
 .container {
+    position: relative;
     max-width: 1520px;
     margin: 0 auto;
     padding: 0 40px;

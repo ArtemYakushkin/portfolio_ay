@@ -1,0 +1,113 @@
+.skills {
+    padding: 72px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.skills__main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.skills__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.skills__percent {
+    font-weight: 800;
+}
+
+.skills__slider {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    background: var(--bg-color);
+    margin-top: 5px;
+}
+
+.skills__html {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__javascript {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__react {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__api {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__node {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__express {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.skills__mongo {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+@media (max-width: 940px) {
+
+    .skills__main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .skills__info {
+        font-size: 16px;
+    }
+
+    .skills__slider {
+        height: 15px;
+    }
+
+}

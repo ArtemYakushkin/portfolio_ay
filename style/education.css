@@ -1,0 +1,146 @@
+.education {
+    background: var(--bg-color);
+    padding-bottom: 0;
+}
+
+.education__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.education__title {
+    text-align: center;
+}
+
+.education__row {
+    display: flex;
+    gap: 40px;
+}
+
+.education__column {
+    flex: 1 1 50%;
+}
+
+.education__subtitle {
+    font-size: 28px;
+    color: var(--text-color);
+    margin: 0 0 12px 24px;
+}
+
+.education__box {
+    border-left: 2px solid var(--main-color);
+}
+
+.education__content {
+    position: relative;
+    padding-left: 20px;
+}
+
+.education__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 20px;
+    height: 20px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.education__content-i {
+    position: relative;
+    padding: 12px;
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.education__content-i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.education__content-i:hover::before {
+    width: 100%;
+}
+
+.education__year {
+    font-size: 12px;
+    color: var(--main-color);
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.education__content-i h3 {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.education__content-i p {
+    font-size: 12px;
+    color: var(--text-color);
+    padding-top: 4px;
+}
+
+
+@media (max-width: 1100px) {
+
+    .education__subtitle {
+        font-size: 20px;
+    }
+
+    .education__content-i h3 {
+        font-size: 16px;
+    }
+
+    .education__content-i p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 940px) {
+
+    .education__subtitle {
+        font-size: 18px;
+    }
+
+    .education__content-i h3 {
+        font-size: 14px;
+    }
+
+    .education__content-i p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .education {
+        padding-bottom: 12px;
+    }
+
+    .education__row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .education__content-i {
+        margin-bottom: 8px;
+    }
+
+}
