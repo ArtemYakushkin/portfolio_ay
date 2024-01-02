@@ -1,3 +1,11 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bg-color: #081b29;
     --second-bg-color: #112e42;
@@ -14,18 +22,10 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--second-bg-color);
-}
-
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 ul,

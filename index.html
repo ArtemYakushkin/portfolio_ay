@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/main.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -30,7 +30,7 @@
                 <a class="header__link" href="#skills">Skills</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#projects">Projects</a>
+                <a class="header__link" href="#project">Projects</a>
               </li>
               <li class="header__item">
                 <a class="header__link" href="#contacts">Contacts</a>
@@ -290,7 +290,6 @@
       </section>
 
       <section id="skills" class="skills">
-        <!-- <div class="container"> -->
         <h2 class="section-title skills__title">
           Just a <span>God</span> of <span>Knoweledge</span> and
           <span>Skills</span>
@@ -360,10 +359,26 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
+      </section>
+
+      <section id="project" class="project">
+        <h2 class="section-title project__title">
+          My <span>Successes</span> and <span>Failures</span>
+        </h2>
+        <div class="project__wrapper">
+          <!-- <button id="left" class="project__btn project__btn-prev"> -->
+          <i id="left" class="bx bx-chevron-left"></i>
+          <!-- </button> -->
+          <div class="project__carousel"></div>
+          <!-- <button id="right" class="project__btn project__btn-next"> -->
+          <i id="right" class="bx bx-chevron-right"></i>
+          <!-- </button> -->
+        </div>
       </section>
     </main>
 
     <script src="./js/mobileMenu.js"></script>
+    <script src="./js/gallery.js" type="module"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
