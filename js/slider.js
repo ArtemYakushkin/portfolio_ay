@@ -16,6 +16,7 @@ carouselChildrens.slice(0, cardPerView).forEach(card => {
 
 arrowsBtn.forEach(btn => {
     btn.addEventListener('click', () => {
+        console.log(btn.id)
         carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
     })
 });

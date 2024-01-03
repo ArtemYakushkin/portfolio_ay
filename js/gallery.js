@@ -185,12 +185,14 @@ const card = createGalletyItem(projectsData);
 sliderContainer.insertAdjacentHTML('beforeend', card);
 
 function createGalletyItem(projectsData) {
-    return projectsData.map(({ imgTab }) => {
+    return projectsData.map(({ imgTab, skills }) => {
         return `
             <li class="project__card">
                 <div class="project__img">
                     <img src="${imgTab}" alt="" draggable="false" />
+                    
                 </div>
+                <p>${skills}</p>
             </li>    
         `;
     }).join('');
