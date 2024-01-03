@@ -1,33 +1,55 @@
 const carousel = document.querySelector('.project__carousel');
-const firstImg = carousel.querySelectorAll('img')[0];
-const arrowIcons = document.querySelectorAll('.project__wrapper i');
+const arrowsBtn = document.querySelectorAll('.project__wrapper i');
+const firstCardWidth = carousel.querySelector('.project__card').offsetWidth;
+const carouselChildrens = [...carousel.children];
 
-let isDragStart = false, prevPageX, prevScrollLeft;
-let firstImgWidth = firstImg.clientWidth + 4;
+let isDragging = false, startX, startScrollLeft;
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-arrowIcons.forEach(icon => {
-    icon.addEventListener('click', () => {
-        carousel.scrollLeft += icon.id == 'left' ? -firstImgWidth : firstImgWidth;
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
+});
+
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML('beforeend', card.outerHTML);
+});
+
+arrowsBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
     })
 });
 
 const dragStart = (e) => { 
-    isDragStart = true;
-    prevPageX = e.pageX;
-    prevScrollLeft = carousel.scrollLeft;
+    isDragging = true;
+    carousel.classList.add('dragging');
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
 };
 
 const dragging = (e) => {
-    if (!isDragStart) return;
-    e.preventDefault();
-    let positionDiff = e.pageX - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    if (!isDragging) return;
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
 
 const dragStop = () => {
-    isDragStart = false;
+    isDragging = false;
+    carousel.classList.remove('dragging');
+};
+
+const infiniteScroll = () => {
+    if (carousel.scrollLeft === 0) {
+        carousel.classList.add('no-transition');
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove('no-transition');
+    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add('no-transition');
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove('no-transition');
+    }
 }
 
 carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('mouseup', dragStop);
+carousel.addEventListener('scroll', infiniteScroll);

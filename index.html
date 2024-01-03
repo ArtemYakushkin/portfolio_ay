@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/main.css" />
+    <!-- <script src="./js/slider.js" ></script> -->
     <title>Portfolio</title>
   </head>
   <body>
@@ -86,7 +87,7 @@
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#projects">
+                    <a class="mobile-menu__link" href="#project">
                       <i class="bx bx-paint-roll"></i>
                       Projects
                     </a>
@@ -366,19 +367,15 @@
           My <span>Successes</span> and <span>Failures</span>
         </h2>
         <div class="project__wrapper">
-          <!-- <button id="left" class="project__btn project__btn-prev"> -->
           <i id="left" class="bx bx-chevron-left"></i>
-          <!-- </button> -->
-          <div class="project__carousel"></div>
-          <!-- <button id="right" class="project__btn project__btn-next"> -->
+          <ul class="project__carousel"></ul>
           <i id="right" class="bx bx-chevron-right"></i>
-          <!-- </button> -->
         </div>
       </section>
     </main>
 
     <script src="./js/mobileMenu.js"></script>
     <script src="./js/gallery.js" type="module"></script>
-    <script src="./js/slider.js"></script>
+    <script src="./js/slider.js" defer></script>
   </body>
 </html>
