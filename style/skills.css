@@ -111,3 +111,11 @@
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .skills {
+        padding: 72px 20px 20px 20px;
+    }
+
+}
