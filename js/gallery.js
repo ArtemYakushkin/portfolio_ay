@@ -1,20 +1,31 @@
 import { projectsData } from './dataBase.js';
 
-const sliderContainer = document.querySelector('.project__carousel');
+const sliderContainer = document.querySelector('.project__slider');
 const card = createGalletyItem(projectsData);
 
 sliderContainer.insertAdjacentHTML('beforeend', card);
 
 function createGalletyItem(projectsData) {
-    return projectsData.map(({ imgMob, imgTab, imgDesk }) => {
+    return projectsData.map(({ imgMob }) => {
         return `
-            <li class="project__card">
-                <div class="project__img">
-                    <img src="${imgMob}" alt="" draggable="false" />
-					<img src="${imgTab}" alt="" draggable="false" />
-					<img src="${imgDesk}" alt="" draggable="false" />
-                </div>
-            </li>    
+            <div class="project__item">
+                <img src="${imgMob}" alt="" />
+            </div>  
         `;
     }).join('');
-}
+};
+
+// const thumbnailContainer = document.querySelector('.thumbnail');
+// const miniCard = createMiniCard(projectsData);
+
+// thumbnailContainer.insertAdjacentHTML('beforeend', miniCard);
+
+// function createMiniCard(projectsData) {
+//     return projectsData.map(({ imgMob, imgDesk }) => {
+//         return `
+//             <div class="item active">
+//                 <img src="${imgMob}" alt="" />
+//             </div>
+//         `;
+//     }).join('');
+// }

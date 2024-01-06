@@ -1,61 +1,45 @@
-// const carousel = document.querySelector('.project__carousel');
-// const arrowsBtn = document.querySelectorAll('.project__wrapper i');
-// const firstCardWidth = carousel.querySelector('.project__card').offsetWidth;
-// const carouselChildrens = [...carousel.children];
+let items = document.querySelectorAll('.project__item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
 
-// let isDragging = false, startX, startScrollLeft;
-// let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+let active = 7;
 
-// carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-//     carousel.insertAdjacentHTML('afterbegin', card.outerHTML);
-// });
+function loadShow() { 
+    let stt = 0;
 
-// carouselChildrens.slice(0, cardPerView).forEach(card => {
-//     carousel.insertAdjacentHTML('beforeend', card.outerHTML);
-// });
+    items[active].style.transform = `none`;
+    items[active].style.zIndex = 1;
+    items[active].style.filter = `none`;
+    items[active].style.opacity = 1;
 
-// arrowsBtn.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         // console.log(btn.id);
-//         carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
-//     })
-// });
+    for (var i = active + 1; i < items.length; i++) {
+        stt++;
+        items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = `blur(5px)`;
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+    }
 
-// const dragStart = (e) => {
-//     isDragging = true;
-//     carousel.classList.add('dragging');
-//     startX = e.pageX;
-//     startScrollLeft = carousel.scrollLeft;
-// };
+    stt = 0;
 
-// const dragging = (e) => {
-//     if (!isDragging) return;
-//     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-// };
+    for (var i = active - 1; i >= 0; i--) {
+        stt++;
+        items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = `blur(5px)`;
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
 
-// const dragStop = () => {
-//     isDragging = false;
-//     carousel.classList.remove('dragging');
-// };
+    }
+};
 
-// const infiniteScroll = () => {
-//     if (carousel.scrollLeft === 0) {
-//         carousel.classList.add('no-transition');
-//         carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-//         carousel.classList.remove('no-transition');
-//     } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-//         carousel.classList.add('no-transition');
-//         carousel.scrollLeft = carousel.offsetWidth;
-//         carousel.classList.remove('no-transition');
-//     }
-// }
+loadShow();
 
-// carousel.addEventListener('mousedown', dragStart);
-// carousel.addEventListener('mousemove', dragging);
-// carousel.addEventListener('mouseup', dragStop);
-// carousel.addEventListener('scroll', infiniteScroll);
+next.onclick = function () {
+    active = active + 1 < items.length ? active + 1 : active;
+    loadShow();
+}
 
-
-let arrowLeft = document.getElementById('arrow-left');
-let arrowRight = document.getElementById('arrow-right');
-let sliderImg = document.getElementById('slider-img');
+prev.onclick = function () {
+    active = active - 1 >= 0 ? active - 1 : active;
+    loadShow();
+}
