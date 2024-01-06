@@ -10,6 +10,7 @@ function createGalletyItem(projectsData) {
         return `
             <div class="project__item">
                 <img src="${imgMob}" alt="" />
+                <button class="project__see-btn">See More</button>
             </div>  
         `;
     }).join('');
