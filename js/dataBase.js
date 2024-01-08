@@ -76,7 +76,7 @@ export const projectsData = [
         imgMob: 'image/projectsImg/mobile/img-8-mob.png',
         imgTab: 'image/projectsImg/tablet/img-8-tab.png',
         imgDesk: 'image/projectsImg/desktop/img-8.png',
-		demoLink: 'https://artemyakushkin.github.io/xiaomi-bike/#specification',
+		demoLink: 'https://artemyakushkin.github.io/xiaomi-bike/',
 		gitLink: 'https://github.com/ArtemYakushkin/xiaomi-bike',
 	},
 	{

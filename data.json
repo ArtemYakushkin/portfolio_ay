@@ -1,0 +1,164 @@
+{  
+    "projects": [
+        {
+            "id":1,
+            "title":"Social network for communication in English",
+            "skills":"React | Node.js | MongoDB",
+            "imgMob":"image/projectsImg/mobile/img-1-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-1-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-1.png",
+            "demoLink":"https://dear-penfriend.netlify.app/",
+            "gitLink":"https://github.com/ArtemYakushkin/dear_penfriend"
+        },
+        {
+            "id":2,
+            "title":"Burger restaurant",
+            "skills":"Angular | HTML | CSS",
+            "imgMob":"image/projectsImg/mobile/img-2-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-2-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-2.png",
+            "demoLink":"https://artemyakushkin.github.io/burgers/",
+            "gitLink":"https://github.com/ArtemYakushkin/burgers"
+        },
+        {
+            "id":3,
+            "title":"Application for calculating the number of calories",
+            "skills":"React | Node.js | MongoDB",
+            "imgMob":"image/projectsImg/mobile/img-3-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-3-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-3.png",
+            "demoLink":"https://artemyakushkin.github.io/slim-mom-project-react/home",
+            "gitLink":"https://github.com/ArtemYakushkin/slim-mom-project-react"
+        },
+        {
+            "id":4,
+            "title":"Image search service",
+            "skills":"React | Rest API",
+            "imgMob":"image/projectsImg/mobile/img-4-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-4-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-4.png",
+            "demoLink":"https://artemyakushkin.github.io/goit-react-hw-04-images/",
+            "gitLink":"https://github.com/ArtemYakushkin/goit-react-hw-04-images/tree/main"
+        },
+        {
+            "id":5,
+            "title":"Ice cream sales website",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-5-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-5-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-5.png",
+            "demoLink":"https://artemyakushkin.github.io/team-project-iceCream/",
+            "gitLink":"https://github.com/ArtemYakushkin/team-project-iceCream"
+        },
+        {
+            "id":6,
+            "title":"Movie search application",
+            "skills":"HTML | SCSS | JavaScript | Rest API",
+            "imgMob":"image/projectsImg/mobile/img-6-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-6-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-6.png",
+            "demoLink":"https://artemyakushkin.github.io/team-project-js-Filmoteka/",
+            "gitLink":"https://github.com/ArtemYakushkin/team-project-js-Filmoteka"
+        },
+        {
+            "id":7,
+            "title":"Website for the production and sale of paper cups",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-7-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-7-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-7.png",
+            "demoLink":"https://artemyakushkin.github.io/paknet/",
+            "gitLink":"https://github.com/ArtemYakushkin/paknet"
+        },
+        {
+            "id":8,
+            "title":"Landing site for advertising the Xiaomi Himo C26 bicycle",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-8-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-8-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-8.png",
+            "demoLink":"https://artemyakushkin.github.io/xiaomi-bike/#specification",
+            "gitLink":"https://github.com/ArtemYakushkin/xiaomi-bike"
+        },
+        {
+            "id":9,
+            "title":"Landing site for a photo studio",
+            "skills":"HTML | SCSS",
+            "imgMob":"image/projectsImg/mobile/img-9-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-9-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-9.png",
+            "demoLink":"https://artemyakushkin.github.io/photo-studio-2/",
+            "gitLink":"https://github.com/ArtemYakushkin/photo-studio-2"
+        },
+        {
+            "id":10,
+            "title":"Furniture store website",
+            "skills":"HTML | SCSS | Gulp",
+            "imgMob":"image/projectsImg/mobile/img-10-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-10-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-10.png",
+            "demoLink":"https://desire-furniture-design.netlify.app/",
+            "gitLink":"https://github.com/ArtemYakushkin/furniture-design/tree/main"
+        },
+        {
+            "id":11,
+            "title":"Landing site for Mercedes-Benz",
+            "skills":"HTML | CSS",
+            "imgMob":"image/projectsImg/mobile/img-11-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-11-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-11.png",
+            "demoLink":"https://artemyakushkin.github.io/mercedes-avatar/",
+            "gitLink":"https://github.com/ArtemYakushkin/mercedes-avatar"
+        },
+        {
+            "id":12,
+            "title":"Barbershop landing site",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-12-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-12-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-12.png",
+            "demoLink":"https://artemyakushkin.github.io/barbershop/",
+            "gitLink":"https://github.com/ArtemYakushkin/barbershop"
+        },
+        {
+            "id":13,
+            "title":"Landing site for web studio",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-13-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-13-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-13.png",
+            "demoLink":"https://artemyakushkin.github.io/WebStudio/index.html",
+            "gitLink":"https://github.com/ArtemYakushkin/WebStudio"
+        },
+        {
+            "id":14,
+            "title":"Landing site for modern bakery",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-14-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-14-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-14.png",
+            "demoLink":"https://artemyakushkin.github.io/modern_bakery/",
+            "gitLink":"https://github.com/ArtemYakushkin/modern_bakery"
+        },
+        {
+            "id":15,
+            "title":"Landing site for beauty saloon",
+            "skills":"HTML | SCSS | JavaScript",
+            "imgMob":"image/projectsImg/mobile/img-15-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-15-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-15.png",
+            "demoLink":"https://artemyakushkin.github.io/beauty_zone/",
+            "gitLink":"https://github.com/ArtemYakushkin/beauty_zone"
+        },
+        {
+            "id":16,
+            "title":"Landing site for Bose",
+            "skills":"HTML | SCSS",
+            "imgMob":"image/projectsImg/mobile/img-16-mob.png",
+            "imgTab":"image/projectsImg/tablet/img-16-tab.png",
+            "imgDesk":"image/projectsImg/desktop/img-16.png",
+            "demoLink":"https://artemyakushkin.github.io/bose/",
+            "gitLink":"https://github.com/ArtemYakushkin/bose"
+        }
+    ]
+}
