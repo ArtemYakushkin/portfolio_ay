@@ -13,10 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 2s;
 }
 
 .modal__content {
+    position: relative;
     max-width: 600px;
     border: 2px solid var(--main-color);
     border-radius: 8px;
@@ -26,6 +26,20 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.modal__close-btn:hover {
+    color: var(--text-color);
+    transform: scale(1.2);
 }
 
 .modal__title {
@@ -125,12 +139,6 @@
     width: 100%;
 }
 
-.modal--show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
@@ -140,7 +148,15 @@
 
     .modal__content {
         padding: 10px;
-        gap: 10px;
+    }
+
+    .modal__close-btn {
+        top: 10px;
+        right: 10px;
+    }
+
+    .modal__close-btn:hover {
+        transform: scale(1.1);
     }
 
 }
@@ -157,7 +173,6 @@
 
     .modal__btn-box {
         flex-direction: column;
-        gap: 10px;
     }
 
     .modal__btn {

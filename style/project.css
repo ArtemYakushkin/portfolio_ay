@@ -30,6 +30,7 @@
     left: calc(50% - 150px);
     top: 0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
 }
 
 .project__item::after {
@@ -39,7 +40,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(17, 46, 66, 0.5270483193277311) 32%, rgba(255, 255, 255, 0) 68%);
+    background: linear-gradient(0deg, rgba(17, 46, 66, 0.633) 32%, rgba(255, 255, 255, 0) 68%);
 }
 
 .project__item img {
@@ -48,26 +49,39 @@
     object-fit: cover;
 }
 
-.project__see-btn {
+.project__text {
     position: absolute;
+    bottom: 15%;
     left: 50%;
-    bottom: 40px;
     transform: translateX(-50%);
-    padding: 12px 32px;
-    background: var(--bg-color);
-    border: 1.5px solid var(--main-color);
-    border-radius: 8px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1;
+    opacity: 0.3;
+    letter-spacing: 5px;
     color: var(--main-color);
-    z-index: 1;
-    overflow: hidden;
-    transition: 0.5s;
+    z-index: 10;
 }
 
-.project__see-btn:hover {
-    background: transparent;
+.project__text::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 100%;
+    height: 3px;
+    border: 2px;
+    background: var(--main-color);
+}
+
+.project__text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -3px;
+    width: 100%;
+    height: 3px;
+    border: 2px;
+    background: var(--main-color);
 }
 
 .project__btn {
@@ -108,13 +122,5 @@
     .project {
         padding: 72px 20px 20px 20px;
     }
-
-}
-
-@media (max-width: 450px) {
-
-    /* .project__btn {
-        top: 100%;
-    } */
 
 }
