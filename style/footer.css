@@ -1,0 +1,130 @@
+.footer {
+    background: var(--bg-color);
+    padding: 40px 0;
+    border-top: 2px solid var(--main-color);
+}
+
+.footer__title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__sci {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__sci-link {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid var(--main-color);
+    font-size: 28px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.footer__sci-link:hover {
+    color: var(--bg-color);
+}
+
+.footer__sci-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.footer__sci-link:hover::before {
+    width: 100%;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.footer__subtitle-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.footer__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+.footer__link:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__left {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__left {
+        margin: 0 auto;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+}
