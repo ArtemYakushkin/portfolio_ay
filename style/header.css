@@ -22,6 +22,12 @@
     color: var(--text-color);
 }
 
+.header__nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
 .header__list {
     display: flex;
     gap: 32px;
@@ -39,7 +45,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
 
     .header__list {
         display: none;

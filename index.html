@@ -15,28 +15,38 @@
       <div class="container">
         <div class="header__wrapper">
           <a href="#home" class="logo">ArtemY.</a>
-          <nav className="header__nav">
+          <select>
+            <option value="en">EN</option>
+            <option value="ua">UA</option>
+          </select>
+          <div className="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link active" href="#home">Home</a>
+                <a class="header__link active lng-home" href="#home">Home</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#about">About</a>
+                <a class="header__link lng-about" href="#about">About</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#education">Education</a>
+                <a class="header__link lng-education" href="#education"
+                  >Education</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__link" href="#skills">Skills</a>
+                <a class="header__link lng-skills" href="#skills">Skills</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#project">Projects</a>
+                <a class="header__link lng-projects" href="#project"
+                  >Projects</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__link" href="#contacts">Contacts</a>
+                <a class="header__link lng-contacts" href="#contacts"
+                  >Contacts</a
+                >
               </li>
             </ul>
-          </nav>
+          </div>
 
           <div class="burger mobile__btn-open">
             <div class="burger-line"></div>
@@ -62,37 +72,46 @@
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#home">
+                    <a class="mobile-menu__link lng-home-menu" href="#home">
                       <i class="bx bx-home-alt"></i>
                       Home
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#about">
+                    <a class="mobile-menu__link lng-about-menu" href="#about">
                       <i class="bx bx-smile"></i>
                       About
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#education">
+                    <a
+                      class="mobile-menu__link lng-education-menu"
+                      href="#education"
+                    >
                       <i class="bx bx-credit-card-front"></i>
                       Education
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#skills">
+                    <a class="mobile-menu__link lng-skills-menu" href="#skills">
                       <i class="bx bx-stats"></i>
                       Skills
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#project">
+                    <a
+                      class="mobile-menu__link lng-projects-menu"
+                      href="#project"
+                    >
                       <i class="bx bx-paint-roll"></i>
                       Projects
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#contacts">
+                    <a
+                      class="mobile-menu__link lng-contacts-menu"
+                      href="#contacts"
+                    >
                       <i class="bx bxs-chat"></i>
                       Contacts
                     </a>
@@ -112,13 +131,12 @@
           <div class="home__wrapper">
             <div class="home__left">
               <div class="home__content">
-                <h1 class="home__title">
-                  Hi, I'm <span>Artem Yakushkin</span>
-                </h1>
+                <h1 class="home__title lng-hello">Hi, I'm</h1>
+                <span class="home__title-span lng-name">Artem Yakushkin</span>
                 <div class="home__text-animate">
                   <h3 class="home__subtitle">Frontend Developer</h3>
                 </div>
-                <p class="home__text">
+                <p class="home__text lng-main-text">
                   Welcome to this website! There's nothing here except coding, a
                   few projects, and some dull technical details. If you were
                   looking for a place to spend your precious time, you've come
@@ -132,11 +150,11 @@
                 <div class="home__btn-box">
                   <a class="home__btn" href="#contacts">
                     <i class="bx bxs-contact"></i>
-                    Contact Me
+                    <p class="lng-contact-btn">Contact Me</p>
                   </a>
                   <button class="home__btn">
                     <i class="bx bx-download"></i>
-                    My Resume
+                    <p class="lng-resume-btn">My Resume</p>
                   </button>
                 </div>
               </div>
@@ -450,5 +468,7 @@
     <script src="./js/gallery.js" type="module" defer></script>
     <script src="./js/slider.js" type="module" defer></script>
     <script src="./js/modal.js" type="module" defer></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/toggleLang.js"></script>
   </body>
 </html>

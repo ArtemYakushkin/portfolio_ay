@@ -25,9 +25,16 @@
     color: var(--text-color);
 }
 
-.home__title span {
+.home__title-span {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.3;
     color: var(--main-color);
 }
+
+/* .home__title span {
+    color: var(--main-color);
+} */
 
 .home__text-animate {
     position: relative;
@@ -79,6 +86,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    width: 148px;
     height: 36px;
     padding: 8px 24px;
     background: var(--main-color);
@@ -242,6 +250,10 @@
         font-size: 40px;
     }
 
+    .home__title-span {
+        font-size: 40px;
+    }
+
     .home__subtitle {
         font-size: 24px;
     }
@@ -279,6 +291,10 @@
 @media (max-width: 360px) {
 
     .home__title {
+        font-size: 36px;
+    }
+
+    .home__title-span {
         font-size: 36px;
     }
 
