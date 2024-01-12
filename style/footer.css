@@ -4,8 +4,7 @@
     border-top: 2px solid var(--main-color);
 }
 
-.footer__title {
-    text-align: center;
+.footer__title-box {
     margin-bottom: 24px;
 }
 

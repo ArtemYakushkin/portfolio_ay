@@ -8,8 +8,7 @@
     align-items: center;
 }
 
-.project__title {
-    text-align: center;
+.project__title-box {
     margin-bottom: 16px;
 }
 

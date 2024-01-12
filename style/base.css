@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: var(--second-bg-color);
     margin: 0;
     padding: 0;
@@ -82,6 +82,14 @@ section {
     padding: 0 40px;
 }
 
+.title-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+}
+
 .section-title {
     font-size: 52px;
     font-weight: 700;
@@ -89,13 +97,20 @@ section {
     color: var(--text-color);
 }
 
-.section-title span {
+.section-title-span {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.3;
     color: var(--main-color);
 }
 
 @media (max-width: 940px) {
 
     .section-title {
+        font-size: 44px;
+    }
+
+    .section-title-span {
         font-size: 44px;
     }
 
@@ -112,6 +127,10 @@ section {
 @media (max-width: 540px) {
 
     .section-title {
+        font-size: 36px;
+    }
+
+    .section-title-span {
         font-size: 36px;
     }
 

@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -42,8 +48,8 @@
               </li>
               <li class="header__item">
                 <a class="header__link lng-contacts" href="#contacts"
-                  >Contacts</a
-                >
+                  >Contacts
+                </a>
               </li>
             </ul>
           </div>
@@ -72,48 +78,39 @@
               <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link lng-home-menu" href="#home">
+                    <a class="mobile-menu__link" href="#home">
                       <i class="bx bx-home-alt"></i>
-                      Home
+                      <p class="lng-home-menu">Home</p>
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link lng-about-menu" href="#about">
+                    <a class="mobile-menu__link" href="#about">
                       <i class="bx bx-smile"></i>
-                      About
+                      <p class="lng-about-menu">About</p>
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a
-                      class="mobile-menu__link lng-education-menu"
-                      href="#education"
-                    >
+                    <a class="mobile-menu__link" href="#education">
                       <i class="bx bx-credit-card-front"></i>
-                      Education
+                      <p class="lng-education-menu">Education</p>
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a class="mobile-menu__link lng-skills-menu" href="#skills">
+                    <a class="mobile-menu__link" href="#skills">
                       <i class="bx bx-stats"></i>
-                      Skills
+                      <p class="lng-skills-menu">Skills</p>
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a
-                      class="mobile-menu__link lng-projects-menu"
-                      href="#project"
-                    >
+                    <a class="mobile-menu__link" href="#project">
                       <i class="bx bx-paint-roll"></i>
-                      Projects
+                      <p class="lng-projects-menu">Projects</p>
                     </a>
                   </li>
                   <li class="mobile-menu__item">
-                    <a
-                      class="mobile-menu__link lng-contacts-menu"
-                      href="#contacts"
-                    >
+                    <a class="mobile-menu__link" href="#contacts">
                       <i class="bx bxs-chat"></i>
-                      Contacts
+                      <p class="lng-contacts-menu">Contacts</p>
                     </a>
                   </li>
                 </ul>
@@ -131,8 +128,10 @@
           <div class="home__wrapper">
             <div class="home__left">
               <div class="home__content">
-                <h1 class="home__title lng-hello">Hi, I'm</h1>
-                <span class="home__title-span lng-name">Artem Yakushkin</span>
+                <div class="home__title-box">
+                  <h1 class="home__title lng-hello">Hi, I'm</h1>
+                  <span class="home__title-span lng-name">Artem Yakushkin</span>
+                </div>
                 <div class="home__text-animate">
                   <h3 class="home__subtitle">Frontend Developer</h3>
                 </div>
@@ -195,14 +194,17 @@
       <section id="about" class="about">
         <div class="container">
           <div class="about__wrapper">
-            <h2 class="section-title about__title">That's <span>Me</span></h2>
+            <div class="title-box">
+              <h2 class="section-title lng-about-title">That's</h2>
+              <span class="section-title-span lng-me">Me</span>
+            </div>
             <div class="about__img">
               <img src="./image/Model-small.jpg" alt="about me" />
               <span class="circle-spin"></span>
             </div>
             <div class="about__content">
               <h3 class="about__subtitle">Frontend Developer!</h3>
-              <p class="about__text">
+              <p class="about__text lng-about-text">
                 What do we have here? Yes, it's me - Artem Yakushkin, your best
                 friend and the one who made this website. Well, it's time to
                 discover a bit about the genius thing next to this page. First,
@@ -227,12 +229,15 @@
       <section id="education" class="education">
         <div class="container">
           <div class="education__wrapper">
-            <h2 class="section-title education__title">
-              My <span>Journey</span> Through <span>Life</span>
-            </h2>
+            <div class="education__title-box title-box">
+              <h2 class="section-title education__title lng-my">My</h2>
+              <span class="section-title-span lng-journey">Journey</span>
+              <h2 class="section-title lng-through">Through</h2>
+              <span class="section-title-span lng-life">Life</span>
+            </div>
             <div class="education__row">
               <div class="education__column">
-                <h3 class="education__subtitle">Education</h3>
+                <h3 class="education__subtitle lng-educatio">Education</h3>
                 <div class="education__box">
                   <div class="education__content">
                     <div class="education__content-i">
@@ -240,11 +245,11 @@
                         <i class="bx bx-calendar"></i>
                         <p>2003 - 2008</p>
                       </div>
-                      <h3>
+                      <h3 class="lng-university">
                         Development of Mineral Deposits - Donetsk National
                         Technical University
                       </h3>
-                      <p>
+                      <p class="lng-engineer">
                         Mining engineering, technical development, environmental
                         protection, production management, economic analysis,
                         health and safety at work
@@ -257,8 +262,10 @@
                         <i class="bx bx-calendar"></i>
                         <p>2021 - 2022</p>
                       </div>
-                      <h3>Full stack developer - IT School GoIT</h3>
-                      <p>
+                      <h3 class="lng-goit">
+                        Full stack developer - IT School GoIT
+                      </h3>
+                      <p class="lng-frontend">
                         Front-end development, back-end development, databases,
                         server and hosting, version control, optimization and
                         performance, development and testing
@@ -268,16 +275,18 @@
                 </div>
               </div>
               <div class="education__column">
-                <h3 class="education__subtitle">Experience</h3>
+                <h3 class="education__subtitle lng-experience">Experience</h3>
                 <div class="education__box">
                   <div class="education__content">
                     <div class="education__content-i">
                       <div class="education__year">
                         <i class="bx bx-calendar"></i>
-                        <p>2008 - present</p>
+                        <p class="lng-present">2008 - present</p>
                       </div>
-                      <h3>Mining engineer - Donbass excavation company</h3>
-                      <p>
+                      <h3 class="lng-mining">
+                        Mining engineer - Donbass excavation company
+                      </h3>
+                      <p class="lng-management">
                         Mining management, personnel management from 30 to 70
                         people, operational planning, monitoring compliance with
                         labor protection rules, manufacturing documents
@@ -289,10 +298,12 @@
                     <div class="education__content-i">
                       <div class="education__year">
                         <i class="bx bx-calendar"></i>
-                        <p>2022 - present</p>
+                        <p class="lng-present-school">2022 - present</p>
                       </div>
-                      <h3>Freelance Software Developer - Self-employed</h3>
-                      <p>
+                      <h3 class="lng-freelance">
+                        Freelance Software Developer - Self-employed
+                      </h3>
+                      <p class="lng-freedom">
                         Freedom to choose projects, diverse projects,
                         multitasking, adaptation to rapidly evolving
                         technologies, responsibility for meeting project
@@ -308,10 +319,14 @@
       </section>
 
       <section id="skills" class="skills">
-        <h2 class="section-title skills__title">
-          Just a <span>God</span> of <span>Knoweledge</span> and
-          <span>Skills</span>
-        </h2>
+        <div class="skills__title-box title-box">
+          <h2 class="section-title lng-just">Just a</h2>
+          <span class="section-title-span lng-god">God</span>
+          <h2 class="section-title lng-of">of</h2>
+          <span class="section-title-span lng-knoweledge">Knoweledge</span>
+          <h2 class="section-title lng-and">and</h2>
+          <span class="section-title-span lng-skill">Skills</span>
+        </div>
         <div class="skills__main">
           <div class="skills__bar">
             <div class="skills__info">
@@ -380,9 +395,14 @@
       </section>
 
       <section id="project" class="project">
-        <h2 class="section-title project__title">
-          My <span>Rollercoaster</span> of <span>Projects</span>
-        </h2>
+        <div class="project__title-box title-box">
+          <h2 class="section-title lng-m">My</h2>
+          <span class="section-title-span lng-rollercoaster"
+            >Rollercoaster</span
+          >
+          <h2 class="section-title lng-v">of</h2>
+          <span class="section-title-span lng-project">Projects</span>
+        </div>
         <div class="project__slider">
           <button id="next" class="project__btn btn-next">></button>
           <button id="prev" class="project__btn btn-prev"><</button>
@@ -392,9 +412,12 @@
 
     <footer id="contacts" class="footer">
       <div class="container">
-        <h2 class="section-title footer__title">
-          Call <span>or</span> write <span>Me!</span>
-        </h2>
+        <div class="footer__title-box title-box">
+          <h2 class="section-title lng-call">Call</h2>
+          <span class="section-title-span lng-or">or</span>
+          <h2 class="section-title lng-write">write</h2>
+          <span class="section-title-span lng-me2">Me!</span>
+        </div>
         <div class="footer__wrapper">
           <div class="footer__left">
             <a href="#home" class="logo footer__logo">ArtemY.</a>
@@ -429,7 +452,7 @@
             <div class="footer__info">
               <div class="footer__subtitle-box">
                 <i class="bx bxs-phone-call"></i>
-                <p class="footer__subtitle">Phone number</p>
+                <p class="footer__subtitle lng-number">Phone number</p>
               </div>
               <a href="tel:+380507025708" class="footer__link">
                 +38 050 702 5 708
@@ -438,7 +461,7 @@
             <div class="footer__info">
               <div class="footer__subtitle-box">
                 <i class="bx bx-envelope"></i>
-                <p class="footer__subtitle">Email Address</p>
+                <p class="footer__subtitle lng-email">Email Address</p>
               </div>
               <a
                 href="mailto:artem.frontdeveloper@gmail.com"
@@ -450,7 +473,7 @@
             <div class="footer__info">
               <div class="footer__subtitle-box">
                 <i class="bx bxl-telegram"></i>
-                <p class="footer__subtitle">Telegram</p>
+                <p class="footer__subtitle lng-telegram">Telegram</p>
               </div>
               <a
                 href="tg://resolve?domain=@ArtemYakushkin"
