@@ -94,6 +94,14 @@
     background: var(--main-color);
 }
 
+.skills__figma {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
 @media (max-width: 940px) {
 
     .skills__main {

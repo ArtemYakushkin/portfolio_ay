@@ -16,7 +16,6 @@ listItems.forEach(function (listItem) {
         location.reload();
 
         e.stopPropagation();
-        // select.innerText = this.innerText;
         select.focus();
         
         list.classList.remove('header__dropdown-list--visible');
