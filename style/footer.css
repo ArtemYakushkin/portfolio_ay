@@ -10,7 +10,8 @@
 
 .footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 240px;
 }
 
 .footer__left {

@@ -1,16 +1,33 @@
-const select = document.querySelector('select');
+const select = document.querySelector('.header__dropdown-btn');
+const list = document.querySelector('.header__dropdown-list');
+const listItems = document.querySelectorAll('.header__dropdown-item');
 const allLang = ['en', 'ua'];
 
-select.addEventListener('change', changeURLLanguadge);
+select.addEventListener('click', function () {
+    list.classList.toggle('header__dropdown-list--visible');
+});
 
-// перенаправить на URL с указанием языка
-function changeURLLanguadge() {
+listItems.forEach(function (listItem) {
+    listItem.addEventListener('click', function (e) {
 
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
-    location.reload();
+        // перенаправить на URL с указанием языка
+        let lang = this.dataset.value;
+        location.href = window.location.pathname + '#' + lang;
+        location.reload();
 
-};
+        e.stopPropagation();
+        // select.innerText = this.innerText;
+        select.focus();
+        
+        list.classList.remove('header__dropdown-list--visible');
+    })
+});
+
+document.addEventListener('click', function (e) {
+    if (e.target !== select) {
+        list.classList.remove('header__dropdown-list--visible');
+    }
+})
 
 function changeLanguage() { 
 
@@ -23,9 +40,8 @@ function changeLanguage() {
         location.href = window.location.pathname + '#en';
         location.reload();
     }
-    select.value = hash;
-
-    // document.querySelector('.lng-home').innerHTML = langArr['home'][hash];
+    select.dataset.value = hash;
+    select.innerText = hash;
 
     for (let key in langArr) {
         document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];
