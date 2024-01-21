@@ -32,6 +32,7 @@ function changeLanguage() {
 
     let hash = window.location.hash;
     hash = hash.substr(1);
+    select.innerText = hash;
     
     // проверяем, если пользователь ввел в адрессной строке язык, которого не существует,
     // то устанавливать язык по-умолчанию
@@ -40,7 +41,7 @@ function changeLanguage() {
         location.reload();
     }
     select.dataset.value = hash;
-    select.innerText = hash;
+    
 
     for (let key in langArr) {
         document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];

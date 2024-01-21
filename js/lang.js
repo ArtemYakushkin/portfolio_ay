@@ -63,10 +63,6 @@ const langArr = {
         "en": "Contact Me",
         "ua": "Мої Контакти",
     },
-    "resume-btn": {
-        "en": "My Resume",
-        "ua": "Моє Резюме",
-    },
     "about-title": {
         "en": "That's",
         "ua": "Такий",

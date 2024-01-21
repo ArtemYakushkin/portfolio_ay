@@ -81,9 +81,6 @@
 
 .home__btn-box {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .home__btn {
@@ -111,19 +108,6 @@
     color: var(--main-color);
 }
 
-.home__btn:nth-child(1) {
-    background: transparent;
-    color: var(--main-color);
-}
-
-.home__btn:nth-child(1):hover {
-    color: var(--bg-color);
-}
-
-.home__btn:nth-child(1)::before {
-    background: var(--main-color);
-}
-
 .home__btn::before {
     content: '';
     position: absolute;
@@ -142,18 +126,6 @@
 
 .home__btn:hover {
     color: var(--main-color);
-}
-
-.home__btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -1;
-    transition: 0.5s;
 }
 
 .home__btn:hover::before {

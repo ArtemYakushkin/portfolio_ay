@@ -12,12 +12,12 @@ export const projectsData = [
 	{
 		id: 2,
 		title: 'Burger restaurant',
-		skills: 'Angular | HTML | CSS',
+		skills: 'HTML | CSS | JavaScript',
         imgMob: 'image/projectsImg/mobile/img-2-mob.png',
         imgTab: 'image/projectsImg/tablet/img-2-tab.png',
         imgDesk: 'image/projectsImg/desktop/img-2.png',
-		demoLink: 'https://artemyakushkin.github.io/burgers/',
-		gitLink: 'https://github.com/ArtemYakushkin/burgers',
+		demoLink: 'https://artemyakushkin.github.io/burger/',
+		gitLink: 'https://github.com/ArtemYakushkin/burger',
 	},
 	{
 		id: 3,
