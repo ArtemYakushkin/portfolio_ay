@@ -36,8 +36,8 @@ export const projectsData = [
         imgMob: 'image/projectsImg/mobile/img-4-mob.png',
         imgTab: 'image/projectsImg/tablet/img-4-tab.png',
         imgDesk: 'image/projectsImg/desktop/img-4.png',
-		demoLink: 'https://artemyakushkin.github.io/goit-react-hw-04-images/',
-		gitLink: 'https://github.com/ArtemYakushkin/goit-react-hw-04-images/tree/main',
+		demoLink: 'https://artemyakushkin.github.io/search-images/',
+		gitLink: 'https://github.com/ArtemYakushkin/search-images',
 	},
 	{
 		id: 5,
