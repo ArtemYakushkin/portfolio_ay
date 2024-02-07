@@ -195,17 +195,5 @@ const langArr = {
     "me2": {
         "en": "Me",
         "ua": "Мені",
-    },
-    "number": {
-        "en": "Phone number",
-        "ua": "Телефон",
-    },
-    "email": {
-        "en": "Email Address",
-        "ua": "Почта",
-    },
-    "telegram": {
-        "en": "Telegram",
-        "ua": "Телеграм",
-    },
+    }
 };
