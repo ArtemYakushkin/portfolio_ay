@@ -28,6 +28,17 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 3px solid var(--second-bg-color);
+    background: var(--second-bg-color);
+    border-radius: 6px;
+}
+
 ul,
 li {
     list-style: none;
