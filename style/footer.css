@@ -10,8 +10,7 @@
 
 .footer__wrapper {
     display: flex;
-    justify-content: center;
-    gap: 240px;
+    justify-content: space-between;
 }
 
 .footer__left {
@@ -72,7 +71,6 @@
 .footer__info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 36px;
 }
 
