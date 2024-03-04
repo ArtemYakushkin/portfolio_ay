@@ -159,4 +159,14 @@ export const projectsData = [
 		demoLink: 'https://artemyakushkin.github.io/bose/',
 		gitLink: 'https://github.com/ArtemYakushkin/bose',
 	},
+		{
+		id: 17,
+		title: 'Online store selling furniture. Admin panel for managing the site. Authorization and data storage are carried out using Firebase',
+		skills: 'React | Node.js | Firebase',
+        imgMob: 'image/projectsImg/mobile/img-17-mob.png',
+        imgTab: 'image/projectsImg/tablet/img-17-tab.png',
+        imgDesk: 'image/projectsImg/desktop/img-17.png',
+		demoLink: 'https://small-store-ay.netlify.app',
+		gitLink: 'https://github.com/ArtemYakushkin/small-store',
+	},
 ];
