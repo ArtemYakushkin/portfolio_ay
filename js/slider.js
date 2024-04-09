@@ -2,7 +2,7 @@ let items = document.querySelectorAll('.project__item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
-let active = 7;
+let active = 0;
 
 function loadShow() { 
     let stt = 0;
