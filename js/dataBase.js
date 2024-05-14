@@ -1,5 +1,25 @@
 export const projectsData = [
 	{
+		id: 20,
+		title: 'Beautiful website with 3D Parallax effect (HTML + CSS)',
+		skills: 'HTML | CSS | JavaScript',
+        imgMob: 'image/projectsImg/mobile/img-20-mob.png',
+        imgTab: 'image/projectsImg/tablet/img-20-tab.png',
+        imgDesk: 'image/projectsImg/desktop/img-20.png',
+		demoLink: 'https://loneliness.netlify.app',
+		gitLink: 'https://github.com/ArtemYakushkin/loneliness',
+	},
+	{
+		id: 19,
+		title: 'Cool 3D website with scrolling animation (HTML CSS JavaScript)',
+		skills: 'HTML | CSS | JavaScript',
+        imgMob: 'image/projectsImg/mobile/img-19-mob.png',
+        imgTab: 'image/projectsImg/tablet/img-19-tab.png',
+        imgDesk: 'image/projectsImg/desktop/img-19.png',
+		demoLink: 'https://emerald-noir.netlify.app',
+		gitLink: 'https://github.com/ArtemYakushkin/emerald',
+	},
+	{
 		id: 18,
 		title: 'Open source chat app with artificial intelligence. The application is written in the React.js framework and styled using the TailwindCSS framework',
 		skills: 'React | TailwindCSS',
