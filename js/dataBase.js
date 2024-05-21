@@ -1,4 +1,14 @@
 export const projectsData = [
+		{
+		id: 21,
+		title: 'Stylish slider based on React with the connection of additional libraries',
+		skills: 'React.js | Swiper | Gsap',
+        imgMob: 'image/projectsImg/mobile/img-21-mob.png',
+        imgTab: 'image/projectsImg/tablet/img-21-tab.png',
+        imgDesk: 'image/projectsImg/desktop/img-21.png',
+		demoLink: 'https://auto-lux.netlify.app',
+		gitLink: 'https://github.com/ArtemYakushkin/auto-lux',
+	},
 	{
 		id: 20,
 		title: 'Beautiful website with 3D Parallax effect (HTML + CSS)',
